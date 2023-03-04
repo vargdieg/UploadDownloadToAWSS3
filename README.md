@@ -1,6 +1,6 @@
 # Upload and download files using Amazon S3 buckets
 
-The main purpose of this project was to make a linux shell in order to upload files from your localstorage to a bucket in S3 and to download files from your bucket on S3 to your localstorage.
+The main purpose of this project is to make a linux shell in order to upload files from your localstorage to a bucket in S3 and to download files from your bucket on S3 to your localstorage.
 S3([Simple Storage Service][1]) is a AWS service that let an user store objects in the cloud offering high avaliability, scalability and also security of the data. 
 
 The shell uses the AWS command line interface in order to make the petitions to AWS to upload/download files.
