@@ -16,10 +16,10 @@ echo "Put Operation" >> PutLogsToAws.txt
 echo Profile $1 BucketName $2 FolderName $3 FileName $4 StoredFolder $5 StoredFilename $6  PutCopyFlag $7 >> PutLogsToAws.txt
     if($7=="True" 2> /dev/null)
     then
-        echo aws s3 mv $6$7 s3://$2$3$4 --profile $1 >> PutLogsToAws.txt
-        aws s3 mv $6$7 s3://$2$3$4 --profile $1 >> PutLogsToAws.txt 2>&1
+        echo aws s3 mv $5$6 s3://$2$3$4 --profile $1 >> PutLogsToAws.txt
+        aws s3 mv $5$6 s3://$2$3$4 --profile $1 >> PutLogsToAws.txt 2>&1
     else
-        echo aws s3 cp $6$7 s3://$2$3$4 --profile $1 >> PutLogsToAws.txt
-        aws s3 cp $6$7 s3://$2$3$4 --profile $1 >> PutLogsToAws.txt 2>&1
+        echo aws s3 cp $5$6 s3://$2$3$4 --profile $1 >> PutLogsToAws.txt
+        aws s3 cp $5$6 s3://$2$3$4 --profile $1 >> PutLogsToAws.txt 2>&1
     fi
 echo >> PutLogsToAws.txt
